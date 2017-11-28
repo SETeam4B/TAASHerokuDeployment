@@ -14,10 +14,10 @@
   </br>
     <ul class="nav nav-pills">
       <li><a ui-sref="ta-coordinators.status"  ng-if="authentication.user.roles[0] === 'tacoordinator'">Status</a></li>
-      <li><a ui-sref="advisorhomepages.list">TA Candidates</a></li>
+      <li><a ui-sref="advisorhomepages.list"  class="bg-info text-white" >TA Candidates</a></li>
       <li><a ui-sref="ta-coordinators.courselist">Course List</a></li>
       <li><a ui-sref="ta-coordinators.facultyCourseList"  ng-if="authentication.user.roles[0] === 'tacoordinator'">TA Recommendations</a></li>
-      <li><a ui-sref="ta-coordinators.tacoordinatorCourseList"  class="bg-info text-white"  ng-if="authentication.user.roles[0] === 'tacoordinator'">Assignments</a></li>
+      <li><a ui-sref="ta-coordinators.tacoordinatorCourseList"   ng-if="authentication.user.roles[0] === 'tacoordinator'">Assignments</a></li>
     </ul>
   <!--<div ng-app="advisorhomepages">-->
     <!--<button ui-sref="Modal.confirmAddToCart">stateful</button>-->
