@@ -12,7 +12,7 @@
   },
   "engines": {
     "node": ">=0.10.28",
-    "npm": ">=5.5.1"
+    "npm": ">5.5.1"
   },
   "scripts": {
     "start": "grunt",
