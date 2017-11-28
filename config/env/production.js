@@ -6,13 +6,13 @@ module.exports = {
     privateKey: './config/sslcerts/key.pem',
     certificate: './config/sslcerts/cert.pem'
   },
-  port: process.env.PORT || 8443,
-  db: {
-    uri: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/mean',
-    options: {
-      user: '',
-      pass: ''
-    },
+  port: process.env.PORT || 8080,
+    db: {
+        uri: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://cen_4b_username:cen_4b_password@ds161584.mlab.com:61584/cen_4b',
+        options: {
+            user: '',
+            pass: ''
+        },
     // Enable mongoose debug mode
     debug: process.env.MONGODB_DEBUG || false
   },
